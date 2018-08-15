@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class GreetingServiceImp implements GreetingService {
 
-    public static final String HelloSentence = "Hello it's me";
+    public static final String HelloSentence = "Hello it's me original";
 
     public String sayGreeting() {
         return HelloSentence;
