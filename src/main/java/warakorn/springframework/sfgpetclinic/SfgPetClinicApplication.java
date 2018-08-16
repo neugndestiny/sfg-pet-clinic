@@ -3,12 +3,14 @@ package warakorn.springframework.sfgpetclinic;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 import warakorn.springframework.sfgpetclinic.controllers.ConstructorInjectedController;
 import warakorn.springframework.sfgpetclinic.controllers.MyController;
 import warakorn.springframework.sfgpetclinic.controllers.PropertyInjectedController;
 import warakorn.springframework.sfgpetclinic.controllers.SetterInjectedController;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"warakorn.services","warakorn.springframework"})
 public class SfgPetClinicApplication {
 
     public static void main(String[] args) {
