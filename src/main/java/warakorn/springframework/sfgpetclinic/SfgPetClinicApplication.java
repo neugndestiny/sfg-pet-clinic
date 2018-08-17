@@ -10,7 +10,7 @@ import warakorn.springframework.sfgpetclinic.controllers.PropertyInjectedControl
 import warakorn.springframework.sfgpetclinic.controllers.SetterInjectedController;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"warakorn.services","warakorn.springframework"})
+@ComponentScan(basePackages = {"warakorn.springframework.sfgpetclinic.services","warakorn.springframework"})
 public class SfgPetClinicApplication {
 
     public static void main(String[] args) {
