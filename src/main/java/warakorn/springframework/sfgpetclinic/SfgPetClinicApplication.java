@@ -8,6 +8,7 @@ import warakorn.springframework.sfgpetclinic.controllers.ConstructorInjectedCont
 import warakorn.springframework.sfgpetclinic.controllers.MyController;
 import warakorn.springframework.sfgpetclinic.controllers.PropertyInjectedController;
 import warakorn.springframework.sfgpetclinic.controllers.SetterInjectedController;
+import warakorn.springframework.sfgpetclinic.examplebeans.FakeDataSource;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"warakorn.springframework.sfgpetclinic.services","warakorn.springframework"})
@@ -18,10 +19,8 @@ public class SfgPetClinicApplication {
 
         MyController controller = (MyController) ctx.getBean("myController");
 
-        controller.hello();
+        FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
 
-        System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
-        System.out.println(ctx.getBean(SetterInjectedController.class).sayHello());
-        System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
+        System.out.println(fakeDataSource.getUser());
     }
 }
