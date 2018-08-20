@@ -1,0 +1,40 @@
+#this is a comment
+
+name: John
+
+names: #You can comment on this line
+    - John
+    - Paul
+    - Ringo
+
+pound_sign: "#"
+
+#This is object()
+book:
+    author: Joe Buck
+    publish: random house
+
+#This is boolean
+truth: yes
+
+#Another boolean
+another_truth: True
+
+#More true
+more_true: true
+
+#This is false
+false: no #No, false, FALSE
+
+string_val: "This is a qupte"
+
+colon_strinhg: "my courses: one two three"
+
+inclue_new_line: |
+  bla lbal abaw
+  wwad adw awdwd
+
+ignore_new_lines: >
+  this is
+  just one long
+  string
