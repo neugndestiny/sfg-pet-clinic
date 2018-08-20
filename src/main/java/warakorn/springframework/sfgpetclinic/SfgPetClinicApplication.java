@@ -4,10 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-import warakorn.springframework.sfgpetclinic.controllers.ConstructorInjectedController;
 import warakorn.springframework.sfgpetclinic.controllers.MyController;
-import warakorn.springframework.sfgpetclinic.controllers.PropertyInjectedController;
-import warakorn.springframework.sfgpetclinic.controllers.SetterInjectedController;
 import warakorn.springframework.sfgpetclinic.examplebeans.FakeDataSource;
 
 @SpringBootApplication
